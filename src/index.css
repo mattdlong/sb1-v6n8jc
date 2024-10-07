@@ -1,0 +1,61 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'PLUMPFULL';
+  src: url('/fonts/PLUMPFULL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+:root {
+  --color-primary: #FFFFFF;
+  --color-secondary: #000000;
+  --color-accent: #E6087B;
+  --color-text: #333333;
+  --color-border: #666666;
+  --color-highlight: #999999;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PLUMPFULL', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Dark mode styles */
+.dark {
+  --color-primary: #000000;
+  --color-secondary: #FFFFFF;
+  --color-text: #CCCCCC;
+  --color-border: #999999;
+  --color-highlight: #666666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}
+
+/* Progressive Web App styles */
+@media (display-mode: standalone) {
+  /* Add PWA-specific styles here */
+}
